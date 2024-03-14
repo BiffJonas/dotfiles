@@ -1,0 +1,14 @@
+keysym a = a A braceleft braceleft braceleft braceleft
+keysym s = s S bracketleft bracketleft bracketleft bracketleft
+keysym d = d D bracketright bracketright bracketright bracketright
+keysym f = f F braceright braceright braceright braceright
+keysym g = g G bar bar bar bar
+keysym g = g G bar bar bar bar
+keysym z = z Z less less less less
+keysym x = x X greater greater greater greater
+keysym w = w W asciitilde asciitilde asciitilde asciitilde
+keysym k = k K backslash backslash backslash backslash
+keysym j = j J slash slash slash slash
+keysym r = r R asciicircum asciicircum asciicircum asciicircum
+keysym l = l L grave grave grave grave 
+keysym h = h H acute acute acute acute 

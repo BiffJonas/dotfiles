@@ -1,0 +1,50 @@
+# Global properties
+separator=true
+separator_block_width=15
+
+# [documentation]
+# full_text=Documentation
+# website=https://vivien.github.io/i3blocks
+# command=xdg-open "$website"
+# color=#f12711
+
+# [greetings]
+# color=#f5af19
+# command=echo "Hello, $USER!"
+# interval=once
+
+[volume]
+command=amixer get Master | awk -F'[][]' '/%/ {print  $4=="off" ? ": Muted" : ": " $2}'
+label=VOL
+instance=Master
+interval=once
+signal=10
+
+[battery]
+command=acpi | awk -F"," '$1 ~ /D/ { print "BAT:" $2} $1 !~ /D/ { print "CHR:" $2}'
+interval=5
+
+[teams]
+# command=echo "Teams: $(cat ~/scripts/dunst/team_notification_counter.txt)"
+# interval=1
+# button=1
+# command=echo "0" > ~/scripts/dunst/team_notification_counter.txt
+# align=center
+# full_text=echo "Teams: $(cat ~/scripts/dunst/team_notification_counter.txt)"
+# min_width=Button=? x=? y=?
+# command=echo "Button=$button x=$x y=$y"
+
+[root_size]
+command=df -h | awk '{if ($6=="/") print $4 "/" $2}'
+interval=1
+
+
+[network]
+command=nmcli -t -f active,ssid dev wifi | awk -F":" '/yes/ {if ($1=="yes") print ($2=="" ? "Down" : $2)}'
+
+interval=1
+color=#00FF00
+
+[time]
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=1

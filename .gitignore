@@ -1,0 +1,17 @@
+.config/spotify
+.config/chromium
+.config/Insomnia/
+.config/chromium/
+.config/dconf/
+.config/dunst/
+.config/gh/
+.config/gtk-3.0/
+.config/jgit/
+.config/menus/
+.config/oldnvim/
+.config/pulse/
+.config/spotify/
+.config/systemd/
+.config/yay/
+.config/mimeapps.list
+.local

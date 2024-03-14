@@ -1,0 +1,21 @@
+#colored outputs
+set colored-stats on
+set colored-completion-prefix on
+
+#completion settings
+set completion-ignore-case on
+set show-all-if-ambiguous on
+
+#Vi-editing mode for bash
+set editing-mode vi                                            
+
+# vi settings                                         
+
+# insert mode             
+set keymap vi-insert                          
+"jk": vi-movement-mode # remap escape   
+
+#Prompt settings
+set show-mode-in-prompt on
+set vi-cmd-mode-string "\1\e[2 q\2"
+set vi-ins-mode-string "\1\e[6 q\2"

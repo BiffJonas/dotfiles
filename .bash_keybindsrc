@@ -1,0 +1,5 @@
+bind -x '"\C-l": clear'
+bind -x '"\C-g": source ~/.bashrc'
+
+bind '"\C-p": history-search-backward'
+bind '"\C-n": history-search-forward'
