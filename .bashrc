@@ -1,6 +1,7 @@
 export BROWSER="firefox-developer-edition"
 export TERMINAL="alacritty"
 export PATH="/opt/apache-maven-3.9.6/bin:$PATH"
+export JAVA_HOME='/usr/lib/jvm/java-22-openjdk'
 
 export DISPLAY=:0
 set -o vi

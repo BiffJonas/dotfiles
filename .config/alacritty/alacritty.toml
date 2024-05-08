@@ -1,3 +1,11 @@
+# [cursor]
+# style = "Block"
+# unfocused_hollow = true
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
+
 [colors.bright]
 black = "0x1c61c2"
 blue = "0x00ff00"

@@ -6,13 +6,16 @@ set $win Mod4
 font pango:JetBrainsMono Nerd Font 8
 
 #restore session
-exec --no-startup-id ~/scripts/WS-Resurrection_res.sh
-exec --no-startup-id ~/scripts/monitor.sh
+exec --no-startup-id /home/BiffJonas/scripts/WS-Resurrection_res.sh
+exec --no-startup-id /home/BiffJonas/scripts/monitor.sh
+
+# Selecting Bluetooth Device
+bindsym $win+b exec /home/BiffJonas/scripts/bluetooth_adv.sh
 
 # Audio controls
-bindsym $win+period exec amixer sset Master 5%+ && pkill -RTMIN+10 i3blocks
-bindsym $win+comma exec amixer sset Master 5%- && pkill -RTMIN+10 i3blocks
-bindsym $win+minus exec amixer sset Master toggle && pkill -RTMIN+10 i3blocks
+bindsym $win+period exec amixer sset Master 5%+
+bindsym $win+comma exec amixer sset Master 5%-
+bindsym $win+minus exec amixer sset Master toggle
 
 #Spotify controls
 bindsym $win+s exec playerctl --player=spotify play-pause
@@ -156,7 +159,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 
-        status_command i3blocks
+        status_command i3status
         font pango:JetBrainsMono Nerd Font 8
 }
 

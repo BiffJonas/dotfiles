@@ -2,6 +2,16 @@ alias grb='gradle build && gradle --console plain -q run'
 alias mvnjava="mvn package && java -cp target/Test-1.0-SNAPSHOT.jar com.mycompany.app.App"
 alias javacall="javac -d ./target ./src/main/java/com/HttpServer/app/App.java && java ./src/main/java/com/HttpServer/app/App.java"
 
+# Create maven project
+mvncreate() {
+    mvn archetype:generate \
+        -DgroupId=com.biffjonas.$1 \
+        -DartifactId=$1 \
+        -DarchetypeArtifactId=maven-archetype-quickstart \
+        -DarchetypeVersion=1.4 \
+        -DinteractiveMode=false
+}
+
 #ls
 
 alias ll='ls -alF'
